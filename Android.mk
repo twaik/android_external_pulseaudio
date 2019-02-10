@@ -301,6 +301,7 @@ ifneq (local,$(NDK_APPS))
 include $(CLEAR_VARS)
 LOCAL_MODULE := daemon.pa
 LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := optional
 LOCAL_MODULE_PATH := $(TARGET_OUT)/etc/pulse/config
 LOCAL_SRC_FILES := $(PULSEAUDIO_PATH)/android-pulseaudio.conf
 include $(BUILD_PREBUILT)
